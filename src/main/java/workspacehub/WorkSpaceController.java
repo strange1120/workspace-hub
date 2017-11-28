@@ -42,12 +42,17 @@ public class WorkSpaceController {
 		model.addAttribute("capacity", capacityRepo.findAll());
 		return "splashPage";
 	}
-	
+
 	@RequestMapping("/space_type")
 	public String getOneSpaceType(@RequestParam Long id, Model model) {
 		model.addAttribute("spacetype", spaceTypeRepo.findOne(id));
 		return "spacetype";
 	}
 
-	
+	@RequestMapping("/index")
+	public String showAllSpaceTypes(Model model) {
+		model.addAttribute("spaceTypes", spaceTypeRepo.findAll());
+		return "spaceTypes";
+	}
+
 }
