@@ -32,8 +32,7 @@ public class WorkSpacePopulator implements CommandLineRunner {
 		SpaceType library = new SpaceType("Library");
 		spaceTypeRepo.save(library);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 		Hours hours1 = new Hours("Monday, Tuesday, Wednesday, Thursday, Friday, 8AM- 6PM");
 		hoursRepo.save(hours1);
 		Hours hours2 = new Hours("Monday, Tuesday, Wednesday, Thursday, Friday, 9AM- 6PM");
@@ -53,32 +52,7 @@ public class WorkSpacePopulator implements CommandLineRunner {
 		Hours hours9 = new Hours("Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, 6AM-9PM, Sunday, 7AM-9PM");
 		hoursRepo.save(hours9);
 		Hours hours10 = new Hours("Monday, Tuesday, Wednesday, Thursday, Friday, 7AM-7PM, Saturday, Sunday, 8AM-7PM");
-=======
-=======
->>>>>>> upstream/master
-		Hours hours1 = new Hours("M-F, 8AM- 6PM");
-		hoursRepo.save(hours1);
-		Hours hours2 = new Hours("M-F, 9AM- 6PM");
-		hoursRepo.save(hours2);
-		Hours hours3 = new Hours("M-S, 24 hrs");
-		hoursRepo.save(hours3);
-		Hours hours4 = new Hours("M-F, 9AM- 5PM");
-		hoursRepo.save(hours4);
-		Hours hours5 = new Hours("M-S, 7AM- 9:30PM, Sunday, 7AM-8PM");
-		hoursRepo.save(hours5);
-		Hours hours6 = new Hours("M-F, 3PM- 9PM,Sat-Su, 10AM-3PM");
-		hoursRepo.save(hours6);
-		Hours hours7 = new Hours("M-Th, 9AM- 9PM,F-S, 9AM-6PM, Su 1-5PM");
-		hoursRepo.save(hours7);
-		Hours hours8 = new Hours("M-W, 5AM-10PM, Th-F 5AM -11PM, S-Su 5:30-10PM");
-		hoursRepo.save(hours8);
-		Hours hours9 = new Hours("M-S, 6AM-9PM, Su, 7AM-9PM");
-		hoursRepo.save(hours9);
-		Hours hours10 = new Hours("M-F, 7AM-7PM, S-Su, 8AM-7PM");
-<<<<<<< HEAD
->>>>>>> 9ce00afb789d58b76ed34e732cd251568b8406b8
-=======
->>>>>>> upstream/master
+
 		hoursRepo.save(hours10);
 
 		Parking garage = new Parking("garage");
@@ -102,40 +76,6 @@ public class WorkSpacePopulator implements CommandLineRunner {
 		Capacity cap = new Capacity("100");
 		capacityRepo.save(cap);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-		workspaceHubRepo.save(
-				new WorkspaceHub("Serendipity Labs", "djskdkjsak", coworkingSpace, hours1, garage, expensive, cap));
-		workspaceHubRepo.save(
-				new WorkspaceHub("Saltmines South", "djskdkjsak", coworkingSpace, hours2, freeStreet, moderate, cap));
-		workspaceHubRepo.save(
-				new WorkspaceHub("Saltmines North", "djskdkjsak", coworkingSpace, hours2, freeStreet, moderate, cap));
-		workspaceHubRepo
-				.save(new WorkspaceHub("The Perch", "djskdkjsak", coworkingSpace, hours3, onSite, moderate, cap));
-		workspaceHubRepo.save(
-				new WorkspaceHub("The Hub on Kenney", "djskdkjsak", coworkingSpace, hours4, onSite, moderate, cap));
-		workspaceHubRepo.save(
-				new WorkspaceHub("Cup O Joe Coffee House", "djskdkjsak", coffeeShop, hours5, onSite, coffee, cap));
-		workspaceHubRepo.save(
-				new WorkspaceHub("Starbucks Clintonville", "djskdkjsak", coffeeShop, hours8, onSite, coffee, cap));
-		workspaceHubRepo.save(
-				new WorkspaceHub("Crimson Cup Clintonville", "djskdkjsak", coffeeShop, hours9, onSite, coffee, cap));
-		workspaceHubRepo.save(new WorkspaceHub("Giant Eagle Market District", "djskdkjsak", coffeeShop, hours10, onSite,
-				coffee, cap));
-		workspaceHubRepo
-				.save(new WorkspaceHub("Mission Coffee", "djskdkjsak", coffeeShop, hours2, freeStreet, coffee, cap));
-		workspaceHubRepo.save(new WorkspaceHub("The Point-Otterbein University", "djskdkjsak", library, hours7, onSite,
-				moderateHigh, cap));
-		workspaceHubRepo.save(new WorkspaceHub("Whetstone Library", "djskdkjsak", library, hours6, onSite, free, cap));
-		workspaceHubRepo.save(
-				new WorkspaceHub("Columbus Metropolitan Library", "djskdkjsak", library, hours7, garage, free, cap));
-		workspaceHubRepo.save(new WorkspaceHub("Northside Branch-Columbus Library", "djskdkjsak", library, hours7,
-				freeStreet, free, cap));
-		workspaceHubRepo
-				.save(new WorkspaceHub("Worthington Library", "djskdkjsak", library, hours7, onSite, free, cap));
-=======
-=======
->>>>>>> upstream/master
 		workspaceHubRepo.save(new WorkspaceHub("Serendipity Labs", "info@csuitesoffices.com",
 				"http://serendipitylabs.com", "21 E State St, Columbus, OH 43215", "(614) 705-2212", "djskdkjsak",
 				coworkingSpace, hours1, garage, expensive, cap));
@@ -181,10 +121,6 @@ public class WorkSpacePopulator implements CommandLineRunner {
 		workspaceHubRepo.save(new WorkspaceHub("Worthington Library", "email", "worthingtonlibraries.org",
 				"820 High Street, Worthington, OH 43085", "614-807-2626", "djskdkjsak", library, hours7, onSite, free,
 				cap));
-<<<<<<< HEAD
->>>>>>> 9ce00afb789d58b76ed34e732cd251568b8406b8
-=======
->>>>>>> upstream/master
 
 	}
 
