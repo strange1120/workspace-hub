@@ -19,6 +19,7 @@ import javax.persistence.OneToOne;
 public class WorkspaceHub {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @Id
 @GeneratedValue
 private Long id;
@@ -110,6 +111,8 @@ public String toString() {
 			description, spaceType, features, hours, parking, cost, capacity);
 }
 =======
+=======
+>>>>>>> upstream/master
 	@Id
 	@GeneratedValue
 	private Long id;
@@ -215,5 +218,8 @@ public String toString() {
 				"WorkspaceHub[name='%s', email='%s', website='%s', address='%s, phoneNumber='%s',description='%s', spaceType='%s',features='%s', hours='%s', parking='%s', cost='%s',capacity='%s']",
 				name, description, spaceType, features, hours, parking, cost, capacity);
 	}
+<<<<<<< HEAD
 >>>>>>> 9ce00afb789d58b76ed34e732cd251568b8406b8
+=======
+>>>>>>> upstream/master
 }
