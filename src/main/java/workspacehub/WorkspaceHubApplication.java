@@ -12,11 +12,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class WorkspaceHubApplication {
 
 	public static void main(String[] args) {
-//		SpringApplication.run(WorkspaceHubApplication.class, args);
-		LocalTime now = LocalTime.now();
-		LocalDate date = LocalDate.now();
-		String currentDay = date.getDayOfWeek()+"";
-		System.out.println(currentDay);
+		SpringApplication.run(WorkspaceHubApplication.class, args);
+//		LocalTime now = LocalTime.now();
+//		LocalDate date = LocalDate.now();
+//		String currentDay = date.getDayOfWeek()+"";
+//		System.out.println(currentDay);
 		
 		
 	}
