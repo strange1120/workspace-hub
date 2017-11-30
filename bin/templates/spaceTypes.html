@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>WorkSpace Hub -- Home</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Carme" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+  	<header>
+  		<img src="/Logo.png" alt="logo" class="logo-image"/>
+  	</header>
+    <nav>
+        <p>Home</p>
+        <p>Categories</p>
+        <p>About Us</p>
+    </nav>
+    <main>
+      <div class="home-images">
+        <div th:each="spaceType: ${spaceTypes}">
+    		  <a th:href="@{/spaceType(id=${spaceType.spaceTypeId})}" th:text="${spaceType.spaceTitle}"></a>
+        </div>
+    	</div>
+    </main>
+  	<footer>
+  		<p>Copyright 2017</p>
+  		<div class="contact-stuff">
+  		<!-- 	<a href=""><img src="" alt="facebook"></a>
+  			<a href=""><img src="" alt="twitter"></a>
+  			<a href=""><img src="" alt="email"></a> -->
+  		</div>
+  	</footer>
+  </div>
+</body>
+</html>

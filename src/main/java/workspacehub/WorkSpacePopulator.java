@@ -32,25 +32,27 @@ public class WorkSpacePopulator implements CommandLineRunner {
 		SpaceType library = new SpaceType("Library");
 		spaceTypeRepo.save(library);
 
-		Hours hours1 = new Hours("M-F, 8AM- 6PM");
+
+		Hours hours1 = new Hours("Monday, Tuesday, Wednesday, Thursday, Friday, 8AM- 6PM");
 		hoursRepo.save(hours1);
-		Hours hours2 = new Hours("M-F, 9AM- 6PM");
+		Hours hours2 = new Hours("Monday, Tuesday, Wednesday, Thursday, Friday, 9AM- 6PM");
 		hoursRepo.save(hours2);
-		Hours hours3 = new Hours("M-S, 24 hrs");
+		Hours hours3 = new Hours("Monday, Tuesday, Wednesday, Thursday, Friday,Saturday, 24 hrs");
 		hoursRepo.save(hours3);
-		Hours hours4 = new Hours("M-F, 9AM- 5PM");
+		Hours hours4 = new Hours("Monday, Tuesday, Wednesday, Thursday, Friday, 9AM- 5PM");
 		hoursRepo.save(hours4);
-		Hours hours5 = new Hours("M-S, 7AM- 9:30PM, Sunday, 7AM-8PM");
+		Hours hours5 = new Hours("Monday, Tuesday, Wednesday, Thursday, Friday,Saturday, 7AM- 9:30PM, Sunday, 7AM-8PM");
 		hoursRepo.save(hours5);
-		Hours hours6 = new Hours("M-F, 3PM- 9PM,Sat-Su, 10AM-3PM");
+		Hours hours6 = new Hours("Monday, Tuesday, Wednesday, Thursday, Friday, 3PM- 9PM,Sat-Su, 10AM-3PM");
 		hoursRepo.save(hours6);
-		Hours hours7 = new Hours("M-Th, 9AM- 9PM,F-S, 9AM-6PM, Su 1-5PM");
+		Hours hours7 = new Hours("Monday, Tuesday, Wednesday, Thursday, 9AM- 9PM,F-S, 9AM-6PM, Su 1-5PM");
 		hoursRepo.save(hours7);
-		Hours hours8 = new Hours("M-W, 5AM-10PM, Th-F 5AM -11PM, S-Su 5:30-10PM");
+		Hours hours8 = new Hours("Monday, Tuesday, Wednesday, 5AM-10PM, Th-F 5AM -11PM, Saturday, Sunday, 5:30-10PM");
 		hoursRepo.save(hours8);
-		Hours hours9 = new Hours("M-S, 6AM-9PM, Su, 7AM-9PM");
+		Hours hours9 = new Hours("Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, 6AM-9PM, Sunday, 7AM-9PM");
 		hoursRepo.save(hours9);
-		Hours hours10 = new Hours("M-F, 7AM-7PM, S-Su, 8AM-7PM");
+		Hours hours10 = new Hours("Monday, Tuesday, Wednesday, Thursday, Friday, 7AM-7PM, Saturday, Sunday, 8AM-7PM");
+
 		hoursRepo.save(hours10);
 
 		Parking garage = new Parking("garage");
